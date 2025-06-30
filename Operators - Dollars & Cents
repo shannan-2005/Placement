@@ -1,0 +1,25 @@
+
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int dol1 = sc.nextInt();
+        int cen1 = sc.nextInt();
+        int dol2 = sc.nextInt();
+        int cen2 = sc.nextInt();
+
+        int dol_sum = dol1 + dol2;
+        int cen_tot = cen1 + cen2;
+
+        if (cen_tot >= 100) {
+            dol_sum += cen_tot / 100; 
+            cen_tot = cen_tot % 100;   
+        }
+
+        System.out.println(dol_sum);
+        System.out.println(cen_tot);
+    }
+}
+
