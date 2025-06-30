@@ -1,0 +1,22 @@
+import java.util.*;
+
+public class Solution {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int treasure = sc.nextInt();
+        int ben_percent = sc.nextInt();
+        int bb_percent = sc.nextInt();
+
+        int ben_share = treasure * ben_percent / 100;
+        treasure -= ben_share;
+
+        int bb_share = treasure * bb_percent / 100;
+        treasure -= bb_share;
+
+        int pirate_share = treasure / 3; 
+
+        System.out.println(ben_share);
+        System.out.println(bb_share);
+        System.out.println(pirate_share);
+    }
+}
